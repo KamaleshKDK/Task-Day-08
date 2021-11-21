@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        class person {
+            constructor(Name, DOB, Age, Gender, Height, Weight, Nationality, State, District, Pincode) {
+                this.Name = Name;
+                this.DOB = DOB;
+                this.Age = Age;
+                this.Gender = Gender;
+                this.Height = Height;
+                this.Weight = Weight;
+                this.Nationality = Nationality;
+                this.State = State;
+                this.District = District;
+                this.Pincode = Pincode
+            }
+        }
+
+        let details = new person("Kamalesh", "1.12.2000", 21, "Male", "160cm", 65, "Indian", "Tamil Nadu", "Salem", 636351);
+        console.log(details)
+
+
+        class uberPrice {
+            constructor(quantity, price) {
+                this.no = quantity;
+                this.price = price;
+            }
+            get total() {
+                return this.no * this.price;
+            }
+        }
+        const t = new uberPrice(2, 100);
+        console.log(t.total);
+
+
+    </script>
+
+</body>
+
+</html>
